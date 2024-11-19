@@ -1,21 +1,21 @@
 Cython>=0.25
 h5py>=2.6,!=3.0.0
-numpy>=1.15
+numpy>=1.26.0
 # GitHub Issue for Pinning Pandas < 2.2.0: https://github.com/ludwig-ai/ludwig/issues/3907
-pandas>=1.0,!=1.1.5,<2.2.0
+pandas==2.1.1
 scipy>=0.18
 tabulate>=0.7
-scikit-learn
+scikit-learn>=1.5.2
 tqdm
-torch>=2.0.0
-torchaudio
-torchtext
-torchvision
+torch==2.0.1
+torchaudio==2.0.2
+torchtext==0.15.2
+torchvision==0.15.2
 pydantic<2.0
-transformers>=4.42.3
-tifffile
-imagecodecs
-tokenizers>=0.15
+transformers==4.33.2
+tifffile==2024.9.20
+imagecodecs>=2024.1.1
+tokenizers==0.13.3
 spacy>=2.3
 PyYAML>=3.12,<6.0.1,!=5.4.* #Exlude PyYAML 5.4.* due to incompatibility with awscli
 absl-py
@@ -27,10 +27,10 @@ jsonschema>=4.5.0,<4.7
 marshmallow
 marshmallow-jsonschema
 marshmallow-dataclass==8.5.4
-tensorboard
+tensorboard>=2.9.0
 nltk    # Required for rouge scores.
-torchmetrics>=0.11.0
-torchinfo
+torchmetrics>=1.4.0
+torchinfo==1.8.0
 filelock
 psutil
 protobuf
@@ -63,7 +63,7 @@ lxml                # html
 html5lib            # html
 
 # requirement for loading hugging face datasets
-datasets
+datasets>=2.16.0
 
 # pin required for torch 2.1.0
 urllib3<2
